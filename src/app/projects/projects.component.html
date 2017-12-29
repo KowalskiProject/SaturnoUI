@@ -1,3 +1,16 @@
-<p>
-  projects works!
-</p>
+<section class="section">
+  <div class="container">
+    <div class="columns headerProjects">
+      <h1 class="title">Projects</h1>
+      <a class="button is-primary is-outlined">Add project</a>
+  </div>
+    <div class="columns is-multiline">
+        <div class="column project-hover is-12" *ngFor="let project of projects">
+          <h2>{{project.name}}</h2>
+          <p>
+          {{project.description}}
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
