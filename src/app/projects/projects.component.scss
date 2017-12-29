@@ -6,3 +6,38 @@
 .headerProjects{
   justify-content: space-between;
 }
+
+.createProject{
+  .header-modal{
+    width : 80%;
+    h1{
+      margin-bottom: 33px;
+    }
+  }
+  .modal-content{
+    background-color: white;
+    width:  1000px;
+    height:722px;
+  }
+  .wrapperLogin {
+    form {
+      width: 80%;
+      input{
+        height:50px;
+      }
+      .action-buttons{
+        display: flex;
+        justify-content: center;
+        a{
+          padding-right: 10px;
+        }
+      }
+    }
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+  }
+}
+

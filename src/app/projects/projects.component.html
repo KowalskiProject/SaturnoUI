@@ -1,7 +1,7 @@
 <section class="section">
   <div class="container">
     <div class="columns headerProjects">
-      <h1 class="title">Projects</h1>
+      <h1>Projects</h1>
       <a class="button is-primary is-outlined">Add project</a>
   </div>
     <div class="columns is-multiline">
@@ -12,5 +12,42 @@
           </p>
         </div>
     </div>
+  </div>
+  <div class="modal createProject">
+    <div class="modal-background" (click)="teste()"></div>
+    <div class="modal-content" >
+
+      <div class="wrapperLogin">
+        <div class="header-modal">
+          <h1 class="title">Create new project</h1>
+        </div>
+         <form class="login">
+           <div class="field" >
+             <label class="label">Name</label>
+             <input class="input" id="input-email" type="email" placeholder="Email address">
+           </div>
+           <div class="field">
+             <label class="label">Project Description</label>
+             <div class="control">
+               <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+             </div>
+           </div>
+           <div class="field is-grouped action-buttons">
+             <div class="control">
+               <a class="button is-white is-large">Save and add new</a>
+             </div>
+             <div class="control">
+               <a class="button is-primary is-large">Add Project</a>
+
+             </div>
+             <div class="control">
+               <a class="button is-white is-large">Cancel</a>
+
+             </div>
+           </div>
+         </form>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
   </div>
 </section>
