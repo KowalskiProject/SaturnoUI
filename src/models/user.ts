@@ -1,14 +1,11 @@
     export class User {
-
-        creationDate : string;
-        email: string;
-        kUserId: number;
-            links: [{
-          href: string,
-          rel: string,
-          templated: true
-        }];
         name: string;
         password: string;
         username: string;
+
+        constructor(name: string, password: string, username: string){
+            this.name = name;
+            this.password = password;
+            this.username = username;
+        }
     }
