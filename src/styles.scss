@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins');
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+// Add pink and its invert
+$pink: #ffb3b3;
+$pink-invert: #fff;
+// Add a serif family
+$family-serif: "Poppins", 'Open Sans' sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: #654EA3;
+$blue: #1976D2;
+$primary-invert: #448AFF;
+// Use the existing orange as the danger color
+$danger: #fff;
+// Use the new serif family
+$family-primary: $family-serif;
+
+$modal-background-background-color: white;
+/* You can add global styles to this file, and also import other style files */
+// 1. Import the initial variables
+
+@import "~bulma";
+
+h1{
+  font-size: 4.6em;
+}
+
+h2{
+  font-size: 3.6em;
+}
+
+h3{
+  font-size: 2.8em;
+}
+
+h4{
+  font-size: 2.2em;
+}
+
+h5{
+  font-size: 1.6em;
+}
+
+p{
+  font-size: 4.6em;
+}

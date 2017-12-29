@@ -1,0 +1,10 @@
+@import '../../styles.scss';
+.welcomeSection{
+  .welcomeMessage{
+    height:100vh;
+    background-color: $primary;
+  }
+  .loginRegister{
+    height:100vh;
+  }
+}
