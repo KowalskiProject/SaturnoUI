@@ -8,6 +8,10 @@ import { LoginRegisterComponent } from './login-register/login-register.componen
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ApiService } from './services/api.service';
+import { AuthenticationService } from './services/authentication.service';
+import { HttpModule } from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,10 +23,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
 
   ],
-  providers: [],
+  providers: [AuthenticationService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
